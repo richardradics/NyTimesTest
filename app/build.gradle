@@ -1,0 +1,150 @@
+ext {
+    ANDROID_SUPPORT_VERSION = '26.1.0'
+    RXJAVA_VERSION = '2.1.0'
+    RXANDROID_VERSION = '2.0.1'
+    CONSTRAINT_LAYOUT_VERSION = '1.0.2'
+    JUNIT_VERSION = '4.12'
+    ESPRESSO_CORE_VERSION = '2.2.2'
+    ANDROID_COMPILE_SDK_VERSION = 26
+    ANDROID_BUILD_TOOLS_VERSION = '26.0.2'
+    ANDROID_MIN_SDK_VERSION = 21
+    ANDROID_TARGET_SDK_VERSION = 26
+    ANDROID_VERSION_CODE = 1
+    ANDROID_VERSION_NAME = '1.0'
+    DAGGER_VERSION = '2.10'
+    RETROFIT_VERSION = '2.2.0'
+    AUTO_VALUE_VERSION = '1.2-rc1'
+    AUTO_VALUE_GSON_VERSION = '0.4.5'
+    LOGGGING_INTERCEPTOR_VERSION = '3.7.0'
+    GSON_VERSION = '2.8.0'
+    BUTTER_KNIFE_VERSION = '8.6.0'
+    MOCKITO_VERSION = '2.8.9'
+    MOCK_WEB_SERVER_VERSION = '2.7.5'
+    SQLITE_JDBC_VERSION = '3.18.0'
+    ANDROID_APPLICATION_ID = 'io.richardradics.test.nytimes'
+    ANDROID_TEST_INSTRUMENTATION_RUNNER = 'android.support.test.runner.AndroidJUnitRunner'
+    ESPRESSO_CORE_VERSION = '2.2.2'
+    PICASSO_VERSION = '2.5.2'
+    doubleQuotes = { variable -> "\"${variable}\"" }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'spoon'
+apply from: './jacoco.gradle'
+apply from: './sonarqube.gradle'
+
+spoon {
+    debug = true
+    sequential = true
+    codeCoverage = true
+}
+
+def appPropertiesFile = file("nytimes.properties")
+def appProperties = new Properties()
+appProperties.load(new FileInputStream(appPropertiesFile))
+
+android {
+    compileSdkVersion ANDROID_COMPILE_SDK_VERSION
+    buildToolsVersion ANDROID_BUILD_TOOLS_VERSION
+    defaultConfig {
+        applicationId ANDROID_APPLICATION_ID
+        minSdkVersion ANDROID_MIN_SDK_VERSION
+        targetSdkVersion ANDROID_TARGET_SDK_VERSION
+        versionCode ANDROID_VERSION_CODE
+        versionName ANDROID_VERSION_NAME
+        testInstrumentationRunner ANDROID_TEST_INSTRUMENTATION_RUNNER
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath false
+            }
+        }
+        buildConfigField "String", "APY_KEY", doubleQuotes(appProperties.get('nyTimesApiKey'))
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            testCoverageEnabled  true
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+
+    testOptions {
+        unitTests.all {
+            jacoco {
+                includeNoLocationClasses = true
+            }
+        }
+    }
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+android.applicationVariants.all {
+    def aptOutputDir = new File(buildDir, "generated/source/apt/${it.unitTestVariant.dirName}")
+    it.unitTestVariant.addJavaSourceFoldersToModel(aptOutputDir)
+}
+
+dependencies {
+    compile "com.android.support:appcompat-v7:${ANDROID_SUPPORT_VERSION}"
+    compile "com.android.support:support-v4:${ANDROID_SUPPORT_VERSION}"
+    compile "com.android.support:design:${ANDROID_SUPPORT_VERSION}"
+    compile "com.android.support:cardview-v7:${ANDROID_SUPPORT_VERSION}"
+    compile "com.android.support:recyclerview-v7:${ANDROID_SUPPORT_VERSION}"
+    compile "com.android.support.constraint:constraint-layout:${CONSTRAINT_LAYOUT_VERSION}"
+    compile "com.squareup.picasso:picasso:${PICASSO_VERSION}"
+
+
+    compile "io.reactivex.rxjava2:rxjava:${RXJAVA_VERSION}"
+    compile "io.reactivex.rxjava2:rxandroid:${RXANDROID_VERSION}"
+
+    compile "com.jakewharton:butterknife:${BUTTER_KNIFE_VERSION}"
+    annotationProcessor "com.jakewharton:butterknife-compiler:${BUTTER_KNIFE_VERSION}"
+
+    compile "com.google.dagger:dagger-android:${DAGGER_VERSION}"
+    annotationProcessor "com.google.dagger:dagger-compiler:${DAGGER_VERSION}"
+
+    compile "com.squareup.retrofit2:retrofit:${RETROFIT_VERSION}"
+    compile "com.squareup.retrofit2:converter-gson:${RETROFIT_VERSION}"
+    compile "com.squareup.retrofit2:adapter-rxjava2:${RETROFIT_VERSION}"
+    compile "com.squareup.okhttp3:logging-interceptor:${LOGGGING_INTERCEPTOR_VERSION}"
+
+    compile "com.google.code.gson:gson:${GSON_VERSION}"
+
+    annotationProcessor "com.google.auto.value:auto-value:${AUTO_VALUE_VERSION}"
+    annotationProcessor "com.ryanharter.auto.value:auto-value-gson:${AUTO_VALUE_GSON_VERSION}"
+    provided "com.ryanharter.auto.value:auto-value-gson:${AUTO_VALUE_GSON_VERSION}"
+
+    testCompile "org.mockito:mockito-core:${MOCKITO_VERSION}"
+
+    testCompile "com.squareup.okhttp:mockwebserver:${MOCK_WEB_SERVER_VERSION}"
+
+    testCompile "com.squareup.retrofit2:retrofit-mock:2.3.0"
+
+    testCompile "junit:junit:${JUNIT_VERSION}"
+
+    testAnnotationProcessor "com.google.dagger:dagger-compiler:${DAGGER_VERSION}"
+
+    androidTestCompile "com.android.support.test.espresso:espresso-core:${ESPRESSO_CORE_VERSION}", {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+
+    androidTestCompile "com.android.support.test.espresso:espresso-contrib:${ESPRESSO_CORE_VERSION}", {
+        exclude group: 'com.android.support', module: 'support-annotations'
+        exclude group: 'com.android.support', module: 'appcompat'
+        exclude group: 'com.android.support', module: 'support-v4'
+        exclude module: 'recyclerview-v7'
+    }
+
+    androidTestCompile "com.android.support.test.espresso:espresso-intents:${ESPRESSO_CORE_VERSION}"
+
+    androidTestCompile 'com.jraska:falcon-spoon-compat:1.0.0'
+    androidTestCompile "com.squareup.spoon:spoon-client:1.3.1"
+    androidTestCompile 'com.jayway.android.robotium:robotium-solo:5.5.4'
+}

@@ -1,0 +1,311 @@
+{
+  "status": "OK",
+  "copyright": "Copyright (c) 2017 The New York Times Company.  All Rights Reserved.",
+  "num_results": 1825,
+  "results": [
+    {
+      "url": "https://www.nytimes.com/interactive/2017/12/13/opinion/contributors/salma-hayek-harvey-weinstein.html",
+      "adx_keywords": "Hayek, Salma;Weinstein, Harvey;Sexual Harassment;Frida (Movie);Miramax Films;Actors and Actresses;Women and Girls;Discrimination;#MeToo Movement;Sex Crimes;Kahlo, Frida",
+      "column": "",
+      "section": "Opinion",
+      "byline": "By SALMA HAYEK",
+      "type": "Interactive",
+      "title": "Harvey Weinstein Is My Monster Too",
+      "abstract": "He threatened to shut down “Frida” if I didn’t comply with his demands.",
+      "published_date": "2017-12-13",
+      "source": "The New York Times",
+      "id": 100000005598891,
+      "asset_id": 100000005598891,
+      "views": 1,
+      "des_facet": [
+        "ACTORS AND ACTRESSES"
+      ],
+      "org_facet": [
+        "SEXUAL HARASSMENT",
+        "MIRAMAX FILMS",
+        "WOMEN AND GIRLS",
+        "DISCRIMINATION",
+        "#METOO MOVEMENT",
+        "SEX CRIMES"
+      ],
+      "per_facet": [
+        "HAYEK, SALMA",
+        "WEINSTEIN, HARVEY",
+        "KAHLO, FRIDA"
+      ],
+      "geo_facet": "",
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "Chad Batka for The New York Times",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2017/12/17/opinion/contributors/17hayek1/12hayek-web-1513168243575-square320.jpg",
+              "format": "square320",
+              "height": 320,
+              "width": 320
+            },
+            {
+              "url": "https://static01.nyt.com/images/2017/12/17/opinion/contributors/17hayek1/12hayek-web-1513168243575-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2017/12/17/opinion/contributors/17hayek1/12hayek-web-1513168243575-articleInline.jpg",
+              "format": "Normal",
+              "height": 126,
+              "width": 190
+            },
+            {
+              "url": "https://static01.nyt.com/images/2017/12/17/opinion/contributors/17hayek1/12hayek-web-1513168243575-sfSpan.jpg",
+              "format": "Large",
+              "height": 264,
+              "width": 395
+            },
+            {
+              "url": "https://static01.nyt.com/images/2017/12/17/opinion/contributors/17hayek1/12hayek-web-1513168243575-jumbo.jpg",
+              "format": "Jumbo",
+              "height": 639,
+              "width": 1024
+            },
+            {
+              "url": "https://static01.nyt.com/images/2017/12/17/opinion/contributors/17hayek1/12hayek-web-1513168243575-superJumbo.jpg",
+              "format": "superJumbo",
+              "height": 1278,
+              "width": 2048
+            },
+            {
+              "url": "https://static01.nyt.com/images/2017/12/17/opinion/contributors/17hayek1/12hayek-web-1513168243575-square640.jpg",
+              "format": "square640",
+              "height": 640,
+              "width": 640
+            },
+            {
+              "url": "https://static01.nyt.com/images/2017/12/17/opinion/contributors/17hayek1/12hayek-web-1513168243575-thumbLarge.jpg",
+              "format": "Large Thumbnail",
+              "height": 150,
+              "width": 150
+            },
+            {
+              "url": "https://static01.nyt.com/images/2017/12/17/opinion/contributors/17hayek1/12hayek-web-1513168243575-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2017/12/17/opinion/contributors/17hayek1/12hayek-web-1513168243575-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.nytimes.com/2017/12/09/us/politics/donald-trump-president.html",
+      "adx_keywords": "Trump, Donald J;United States Politics and Government;Television;Special Prosecutors (Independent Counsel);Twitter;Kelly, John F (1950- );Mueller, Robert S III;Fox & Friends (TV Program)",
+      "column": "Trump’s Way",
+      "section": "U.S.",
+      "byline": "By MAGGIE HABERMAN, GLENN THRUSH and PETER BAKER",
+      "type": "Article",
+      "title": "Inside Trump’s Hour-by-Hour Battle for Self-Preservation",
+      "abstract": "With Twitter as his Excalibur, the president takes on his doubters, powered by long spells of cable news and a dozen Diet Cokes. But if Mr. Trump has yet to bend the presidency to his will, he is at least wrestling it to a draw.",
+      "published_date": "2017-12-09",
+      "source": "The New York Times",
+      "id": 100000005572435,
+      "asset_id": 100000005572435,
+      "views": 2,
+      "des_facet": [
+        "UNITED STATES POLITICS AND GOVERNMENT"
+      ],
+      "org_facet": [
+        "TELEVISION",
+        "SPECIAL PROSECUTORS (INDEPENDENT COUNSEL)",
+        "TWITTER"
+      ],
+      "per_facet": [
+        "TRUMP, DONALD J",
+        "KELLY, JOHN F (1950- )",
+        "MUELLER, ROBERT S III"
+      ],
+      "geo_facet": "",
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "President Trump during a news conference in the Rose Garden last month.",
+          "copyright": "Doug Mills/The New York Times",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2017/12/10/us/politics/10dc-trumpopus-top/12dc-trumpday-square320.jpg",
+              "format": "square320",
+              "height": 320,
+              "width": 320
+            },
+            {
+              "url": "https://static01.nyt.com/images/2017/12/10/us/politics/10dc-trumpopus-top/12dc-trumpday-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2017/12/10/us/politics/10dc-trumpopus-top/12dc-trumpday-articleInline.jpg",
+              "format": "Normal",
+              "height": 152,
+              "width": 190
+            },
+            {
+              "url": "https://static01.nyt.com/images/2017/12/10/us/politics/10dc-trumpopus-top/12dc-trumpday-sfSpan.jpg",
+              "format": "Large",
+              "height": 263,
+              "width": 395
+            },
+            {
+              "url": "https://static01.nyt.com/images/2017/12/10/us/politics/10dc-trumpopus-top/12dc-trumpday-jumbo.jpg",
+              "format": "Jumbo",
+              "height": 818,
+              "width": 1024
+            },
+            {
+              "url": "https://static01.nyt.com/images/2017/12/10/us/politics/10dc-trumpopus-top/12dc-trumpday-superJumbo.jpg",
+              "format": "superJumbo",
+              "height": 1637,
+              "width": 2048
+            },
+            {
+              "url": "https://static01.nyt.com/images/2017/12/10/us/politics/10dc-trumpopus-top/12dc-trumpday-square640.jpg",
+              "format": "square640",
+              "height": 640,
+              "width": 640
+            },
+            {
+              "url": "https://static01.nyt.com/images/2017/12/10/us/politics/10dc-trumpopus-top/12dc-trumpday-thumbLarge.jpg",
+              "format": "Large Thumbnail",
+              "height": 150,
+              "width": 150
+            },
+            {
+              "url": "https://static01.nyt.com/images/2017/12/10/us/politics/10dc-trumpopus-top/12dc-trumpday-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2017/12/10/us/politics/10dc-trumpopus-top/12dc-trumpday-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.nytimes.com/2017/12/11/nyregion/explosion-times-square.html",
+      "adx_keywords": "Ullah, Akayed;Times Square and 42nd Street (Manhattan, NY);Subways;Evacuations and Evacuees;Port Authority Bus Terminal (Manhattan, NY);Terrorism;Bombs and Explosives",
+      "column": null,
+      "section": "N.Y. / Region",
+      "byline": "By SARAH MASLIN NIR and WILLIAM K. RASHBAUM",
+      "type": "Article",
+      "title": "Bomber Strikes Near Times Square, Disrupting City but Killing None",
+      "abstract": "The would-be suicide attacker told officials he set off the bomb in retaliation for U.S. strikes on ISIS, targeting a subway tunnel because of its Christmas-themed posters.",
+      "published_date": "2017-12-11",
+      "source": "The New York Times",
+      "id": 100000005598153,
+      "asset_id": 100000005598153,
+      "views": 3,
+      "des_facet": [
+        "SUBWAYS",
+        "EVACUATIONS AND EVACUEES",
+        "TERRORISM",
+        "BOMBS AND EXPLOSIVES"
+      ],
+      "org_facet": [
+        "PORT AUTHORITY BUS TERMINAL (MANHATTAN, NY)"
+      ],
+      "per_facet": [
+        "ULLAH, AKAYED"
+      ],
+      "geo_facet": [
+        "TIMES SQUARE AND 42ND STREET (MANHATTAN, NY)"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "After an explosion on Monday, police officers blocked a passageway connecting the Times Square and Port Authority subway stations in New York.",
+          "copyright": "Jeenah Moon for The New York Times",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2017/12/12/nyregion/12xp-subway-hp/12xp-subway-hp-square320-v2.jpg",
+              "format": "square320",
+              "height": 320,
+              "width": 320
+            },
+            {
+              "url": "https://static01.nyt.com/images/2017/12/12/nyregion/12xp-subway-hp/12xp-subway-hp-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2017/12/12/nyregion/12xp-subway-hp/12xp-subway-hp-articleInline.jpg",
+              "format": "Normal",
+              "height": 127,
+              "width": 190
+            },
+            {
+              "url": "https://static01.nyt.com/images/2017/12/12/nyregion/12xp-subway-hp/12xp-subway-hp-sfSpan.jpg",
+              "format": "Large",
+              "height": 263,
+              "width": 395
+            },
+            {
+              "url": "https://static01.nyt.com/images/2017/12/12/nyregion/12xp-subway-hp/12xp-subway-hp-jumbo.jpg",
+              "format": "Jumbo",
+              "height": 683,
+              "width": 1024
+            },
+            {
+              "url": "https://static01.nyt.com/images/2017/12/12/nyregion/12xp-subway-hp/12xp-subway-hp-superJumbo.jpg",
+              "format": "superJumbo",
+              "height": 1365,
+              "width": 2048
+            },
+            {
+              "url": "https://static01.nyt.com/images/2017/12/12/nyregion/12xp-subway-hp/12xp-subway-hp-square640-v2.jpg",
+              "format": "square640",
+              "height": 640,
+              "width": 640
+            },
+            {
+              "url": "https://static01.nyt.com/images/2017/12/12/nyregion/12xp-subway-hp/12xp-subway-hp-thumbLarge.jpg",
+              "format": "Large Thumbnail",
+              "height": 150,
+              "width": 150
+            },
+            {
+              "url": "https://static01.nyt.com/images/2017/12/12/nyregion/12xp-subway-hp/12xp-subway-hp-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2017/12/12/nyregion/12xp-subway-hp/12xp-subway-hp-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

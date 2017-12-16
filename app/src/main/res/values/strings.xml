@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">nytimes</string>
+    <string name="list_item_article_picture_description">Picture from article</string>
+</resources>
